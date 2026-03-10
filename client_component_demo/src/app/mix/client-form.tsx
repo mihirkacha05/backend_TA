@@ -2,6 +2,7 @@
 
 import { useState } from "react"
 import { printData } from "./actions"
+import { addUser } from "../server/actions/adduser"
 
 export default function ClientForm() {
 
@@ -36,6 +37,26 @@ export default function ClientForm() {
           placeholder="Enter name"
         />
         <button type="submit">Submit server</button>
+      </form>
+
+      <hr></hr>
+
+      <form action={addUser}>
+
+        <input
+          name="name"
+          placeholder="Enter Name"
+        />
+
+        <input
+          name="password"
+          placeholder="Enter Password"
+        />
+
+        <button type="submit">
+          Save User
+        </button>
+
       </form>
 
     </div>
