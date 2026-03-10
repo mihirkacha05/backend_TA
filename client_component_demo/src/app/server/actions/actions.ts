@@ -1,6 +1,8 @@
 "use server"
 
-export async function saveData(formData:FormData) {
+export async function printData(formData: FormData) {
+
   const name = formData.get("name")
-  console.log(name)
+
+  console.log("Server received:", name)
 }

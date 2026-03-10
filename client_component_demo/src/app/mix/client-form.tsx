@@ -1,7 +1,8 @@
 "use client"
 
 import { useState } from "react"
-import { printData } from "./actions"
+
+import { printData } from "./../server/actions/actions"
 import { addUser } from "../server/actions/adduser"
 
 export default function ClientForm() {

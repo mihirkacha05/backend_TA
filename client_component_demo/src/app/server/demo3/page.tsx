@@ -1,8 +1,8 @@
-import { saveData } from "../actions/actions"
+import { printData } from "../actions/actions"
 
 export default function Page() {
   return (
-    <form action={saveData}>
+    <form action={printData}>
       <input name="name" />
       <button>Submit</button>
     </form>

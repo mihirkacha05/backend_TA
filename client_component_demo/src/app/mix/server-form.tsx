@@ -1,4 +1,4 @@
-import { printData } from "./actions"
+import { printData } from "./../server/actions/actions"
 
 export default function ServerForm() {
 
